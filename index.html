@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreshFruit — Assignment 2: CSS Grid &amp; Flexbox</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Задание 1 -->
+  <div class="mondrian-section">
+    <div class="mondrian-title-row">
+      <span class="mondrian-task-pill">Task 1</span>
+      <h2 class="mondrian-title">Mondrian 6×6 CSS Grid Composition</h2>
+    </div>
+
+    <div class="mondrian">
+      <div class="m-blue"></div>
+      <div class="m-white-top"></div>
+      <div class="m-yellow"></div>
+      <div class="m-white-right"></div>
+      <div class="m-black"></div>
+      <div class="m-red"></div>
+      <div class="m-white-bottom"></div>
+    </div>
+  </div>
+
+  <!-- Шапка -->
+  <header class="page-header">
+    <div class="page-header-logo">
+      <img class="logo-icon" src="things/grape.png" alt="FreshFruit logo">
+      FreshFruit
+    </div>
+    <div class="page-header-center"></div>
+    <div class="page-header-right"></div>
+  </header>
+
+  <!-- Задание 2 -->
+  <section class="section">
+    <p class="task-pill">Task 2</p>
+    <h2 class="section-h2">Flexbox Components</h2>
+
+    <!-- Навигация -->
+    <div class="comp-block">
+      <p class="comp-label">Component 1 — Navigation Bar</p>
+      <nav class="nav-demo">
+        <a href="#" class="nav-logo">
+          <img class="nav-logo-icon" src="things/grape.png" alt="FreshFruit logo">
+          FreshFruit
+        </a>
+        <ul class="nav-links">
+          <li><a href="#">Catalog</a></li>
+          <li><a href="#">Subscriptions</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Reviews</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="btn-icon" title="Search">
+            <img src="things/search.png" alt="Search">
+          </button>
+          <button class="btn-cart">
+            <img src="things/shopping-cart.png" alt="Cart">
+            Cart <span class="cart-badge">3</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Карточки -->
+    <div class="comp-block">
+      <p class="comp-label">Component 2 — Equal-Height Cards</p>
+      <div class="cards-row">
+        <div class="fruit-card">
+          <img class="fruit-card-img" src="things/4410f46f709d30b3314ae69106f3d64d.jpg" alt="Oranges">
+          <div class="fruit-card-body">
+            <span class="fruit-badge badge-hot">Best Seller</span>
+            <p class="fruit-name">Organic Oranges</p>
+            <p class="fruit-desc">Sun-ripened Valencia oranges. Intensely sweet and juicy.</p>
+            <div class="fruit-card-footer">
+              <span class="fruit-price">$4.99 <small>/ 1 kg</small></span>
+              <button class="btn-add">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="fruit-card">
+          <img class="fruit-card-img" src="things\31dcb683c2131b62f27ed9c775d338a1.jpg" alt="Strawberries">
+          <div class="fruit-card-body">
+            <span class="fruit-badge badge-eco">Eco</span>
+            <p class="fruit-name">Garden Strawberries</p>
+            <p class="fruit-desc">Plump, fragrant strawberries hand-picked at peak ripeness. Great for desserts.</p>
+            <div class="fruit-card-footer">
+              <span class="fruit-price">$3.49 <small>/ 500 g</small></span>
+              <button class="btn-add">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="fruit-card">
+          <img class="fruit-card-img" src="things/564421691a1c610ef384ab437ed7159e.jpg" alt="Grapes">
+          <div class="fruit-card-body">
+            <span class="fruit-badge badge-eco">Eco</span>
+            <p class="fruit-name">Green Grapes</p>
+            <p class="fruit-desc">Crisp and refreshingly sweet. Pesticide-free.</p>
+            <div class="fruit-card-footer">
+              <span class="fruit-price">$5.99 <small>/ 1 kg</small></span>
+              <button class="btn-add">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Тарифы -->
+    <div class="comp-block">
+      <p class="comp-label">Component 3 — Pricing Table</p>
+      <div class="pricing-table">
+        <div class="plan-card">
+          <p class="plan-name">Mini Box</p>
+          <p class="plan-weight">2.5 kg · per week</p>
+          <p class="plan-price">$9</p>
+          <p class="plan-period">per week</p>
+          <ul class="plan-features">
+            <li>4 seasonal fruit varieties</li>
+            <li>1–2 person serving</li>
+            <li>Eco compostable packaging</li>
+          </ul>
+          <button class="btn-plan btn-plan-outline">Get Mini Box</button>
+        </div>
+
+        <div class="plan-card featured">
+          <span class="plan-popular">Most Popular</span>
+          <p class="plan-name">Family Box</p>
+          <p class="plan-weight">5 kg · per week</p>
+          <p class="plan-price">$16</p>
+          <p class="plan-period">per week</p>
+          <ul class="plan-features">
+            <li>7 seasonal fruit varieties</li>
+            <li>3–4 person serving</li>
+            <li>Free delivery included</li>
+            <li>Customizable preferences</li>
+          </ul>
+          <button class="btn-plan btn-plan-white">Get Family Box</button>
+        </div>
+
+        <div class="plan-card">
+          <p class="plan-name">Office Box</p>
+          <p class="plan-weight">10 kg · per week</p>
+          <p class="plan-price">$29</p>
+          <p class="plan-period">per week</p>
+          <ul class="plan-features">
+            <li>10+ fruit varieties</li>
+            <li>Ideal for workplace teams</li>
+            <li>Priority morning delivery</li>
+          </ul>
+          <button class="btn-plan btn-plan-outline">Get Office Box</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Пагинация -->
+    <div class="comp-block">
+      <p class="comp-label">Component 4 — Pagination Bar</p>
+      <div class="pagination-wrap">
+        <div class="pagination-spacer"></div>
+        <div class="pagination-center">
+          <button class="page-btn arrow">Prev</button>
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <button class="page-btn">4</button>
+          <button class="page-btn arrow">Next</button>
+        </div>
+        <div class="pagination-results">Showing 1–12 of 48 results</div>
+      </div>
+    </div>
+
+    <!-- Комментарий -->
+    <div class="comp-block">
+      <p class="comp-label">Component 5 — Comment Block (Media Object)</p>
+      <div class="comments-row">
+        <div class="comment-card">
+          <div class="avatar-wrap">
+            <div class="avatar-initial">A</div>
+          </div>
+          <div class="comment-content">
+            <div class="comment-top-row">
+              <span class="comment-name">Anna S.</span>
+              <span class="comment-date">2 days ago</span>
+              <span class="comment-stars">5/5</span>
+            </div>
+            <p class="comment-text">The Family Box was amazing! The strawberries and oranges were so fresh. Will definitely order every week!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Задание 3 -->
+  <section class="section">
+    <p class="task-pill">Task 3</p>
+    <h2 class="section-h2">Product Catalog Layout Switcher</h2>
+
+    <!-- Переключатели -->
+    <input type="radio" id="v-grid" name="layout" class="layout-radio" checked>
+    <input type="radio" id="v-list" name="layout" class="layout-radio">
+    <input type="radio" id="v-mag"  name="layout" class="layout-radio">
+
+    <div class="layout-controls">
+      <label for="v-grid" class="layout-label"><img src="things/icons8-grid-72.png" alt="Grid mode"><span>Grid</span></label>
+      <label for="v-list" class="layout-label"><img src="things/icons8-list-48.png" alt="List mode"><span>List</span></label>
+      <label for="v-mag"  class="layout-label"><img src="things/icons8-magazine-48.png" alt="Magazine mode"><span>Magazine</span></label>
+    </div>
+
+    <!-- Товары -->
+    <div class="products">
+      <div class="p-card">
+        <img class="p-img" src="things/4410f46f709d30b3314ae69106f3d64d.jpg" alt="Oranges">
+        <div class="p-body">
+          <div class="p-info">
+            <span class="p-badge badge-hot">Popular</span>
+            <p class="p-name">Valencia Oranges</p>
+            <p class="p-desc">Sun-ripened oranges perfect for juice and daily vitamins.</p>
+          </div>
+          <div class="p-footer">
+            <span class="p-date">Fresh today</span>
+            <span class="p-price">$4.99</span>
+            <button class="p-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-card">
+        <img class="p-img" src="things/31dcb683c2131b62f27ed9c775d338a1.jpg" alt="Strawberries">
+        <div class="p-body">
+          <div class="p-info">
+            <span class="p-badge badge-eco">Eco</span>
+            <p class="p-name">Fresh Strawberries</p>
+            <p class="p-desc">Sweet and juicy berries from local gardens.</p>
+          </div>
+          <div class="p-footer">
+            <span class="p-date">Fresh today</span>
+            <span class="p-price">$3.49</span>
+            <button class="p-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-card">
+        <img class="p-img" src="things/564421691a1c610ef384ab437ed7159e.jpg" alt="Grapes">
+        <div class="p-body">
+          <div class="p-info">
+            <span class="p-badge badge-eco">Eco</span>
+            <p class="p-name">Green Seedless Grapes</p>
+            <p class="p-desc">Crisp texture with a smooth sweet flavor.</p>
+          </div>
+          <div class="p-footer">
+            <span class="p-date">Imported</span>
+            <span class="p-price">$5.99</span>
+            <button class="p-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-card">
+        <img class="p-img" src="things/9a449afe19434299a7f5f169fd80dff8.jpg" alt="Bananas">
+        <div class="p-body">
+          <div class="p-info">
+            <span class="p-badge badge-hot">Popular</span>
+            <p class="p-name">Cavendish Bananas</p>
+            <p class="p-desc">Rich in potassium, ideal for breakfast.</p>
+          </div>
+          <div class="p-footer">
+            <span class="p-date">Fresh today</span>
+            <span class="p-price">$2.29</span>
+            <button class="p-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-card">
+        <img class="p-img" src="things/5097b002eb9151ab867a98aa223a3905.jpg" alt="Apples">
+        <div class="p-body">
+          <div class="p-info">
+            <span class="p-badge badge-eco">Eco</span>
+            <p class="p-name">Red Crisp Apples</p>
+            <p class="p-desc">Naturally sweet with an extra crunchy bite.</p>
+          </div>
+          <div class="p-footer">
+            <span class="p-date">Local farm</span>
+            <span class="p-price">$3.10</span>
+            <button class="p-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-card">
+        <img class="p-img" src="things/d2f18583759d2a1fb5201e2ff7ff2977.jpg" alt="Pineapple">
+        <div class="p-body">
+          <div class="p-info">
+            <span class="p-badge badge-hot">Tropical</span>
+            <p class="p-name">Golden Pineapple</p>
+            <p class="p-desc">Tangy and tropical, hand-selected for quality.</p>
+          </div>
+          <div class="p-footer">
+            <span class="p-date">Imported</span>
+            <span class="p-price">$6.50</span>
+            <button class="p-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-card">
+        <img class="p-img" src="things/40bc25937487b3fb07a03bf6ff0c6400.jpg" alt="Bananas">
+        <div class="p-body">
+          <div class="p-info">
+            <span class="p-badge badge-eco">Organic</span>
+            <p class="p-name">Organic Bananas</p>
+            <p class="p-desc">100% pesticide-free organic bananas.</p>
+          </div>
+          <div class="p-footer">
+            <span class="p-date">Fresh today</span>
+            <span class="p-price">$2.99</span>
+            <button class="p-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-card">
+        <img class="p-img" src="things/07a3fcb4d883d7f818ca620dcc53b250.jpg" alt="Pineapple">
+        <div class="p-body">
+          <div class="p-info">
+            <span class="p-badge badge-hot">Best Value</span>
+            <p class="p-name">Mini Pineapples</p>
+            <p class="p-desc">Sweet and bite-sized tropical snacks.</p>
+          </div>
+          <div class="p-footer">
+            <span class="p-date">Limited</span>
+            <span class="p-price">$4.20</span>
+            <button class="p-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-card">
+        <img class="p-img" src="things/37cadc91a17e5982b66fd4682395a5d4.jpg" alt="Mixed Fruit">
+        <div class="p-body">
+          <div class="p-info">
+            <span class="p-badge badge-eco">Mix</span>
+            <p class="p-name">Berry Selection</p>
+            <p class="p-desc">A mix of seasonal fresh berries.</p>
+          </div>
+          <div class="p-footer">
+            <span class="p-date">Fresh today</span>
+            <span class="p-price">$7.80</span>
+            <button class="p-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-card">
+        <img class="p-img" src="things/e01404a61a30480a95d4349f0c5549f0.jpg" alt="Strawberries">
+        <div class="p-body">
+          <div class="p-info">
+            <span class="p-badge badge-hot">Sweet</span>
+            <p class="p-name">Wild Strawberries</p>
+            <p class="p-desc">Intense aroma and naturally sweet flavor.</p>
+          </div>
+          <div class="p-footer">
+            <span class="p-date">Local farm</span>
+            <span class="p-price">$4.50</span>
+            <button class="p-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-card">
+        <img class="p-img" src="things/538aaf33a4e8f208c5ef2e4eb5a87b05.jpg" alt="Citrus">
+        <div class="p-body">
+          <div class="p-info">
+            <span class="p-badge badge-eco">Citrus</span>
+            <p class="p-name">Blood Oranges</p>
+            <p class="p-desc">Unique rich flavor with dark red flesh.</p>
+          </div>
+          <div class="p-footer">
+            <span class="p-date">Seasonal</span>
+            <span class="p-price">$5.20</span>
+            <button class="p-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-card">
+        <img class="p-img" src="things/86e76492c216ea3af9641d8d4ef473f7.jpg" alt="Green Apples">
+        <div class="p-body">
+          <div class="p-info">
+            <span class="p-badge badge-eco">Sour</span>
+            <p class="p-name">Granny Smith Apples</p>
+            <p class="p-desc">Crisp, tart, and refreshing green apples.</p>
+          </div>
+          <div class="p-footer">
+            <span class="p-date">Fresh today</span>
+            <span class="p-price">$3.30</span>
+            <button class="p-btn">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="page-footer">
+    <p>FreshFruit Store — Assignment 2 Completed. Built with <em>CSS Grid &amp; Flexbox</em>.</p>
+  </footer>
+
+</body>
+</html>
